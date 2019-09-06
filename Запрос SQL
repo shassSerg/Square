@@ -1,1 +1,1 @@
-select a.Имя_продукта,c.Имя_Категории from продукты as a left join продукты_категории as b on a.ID=b.ID_продукта left join категории as c on b.ID_категории=c.ID
+select b.Имя_продукта,c.Имя_Категории from продукты_категории as a full outer join продукты as b on b.ID=a.ID_продукта left join категории as c on a.ID_категории=c.ID
