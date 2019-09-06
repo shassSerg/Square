@@ -1,1 +1,1 @@
-select * from продукты left join категории on продукты.Имя_продукта=категории.Имя_категории
+select a.Имя_продукта,c.Имя_Категории from продукты as a left join продукты_категории as b on a.ID=b.ID_продукта left join категории as c on b.ID_категории=c.ID
